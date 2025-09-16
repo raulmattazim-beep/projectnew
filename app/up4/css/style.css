@@ -1,0 +1,268 @@
+/* Estilos gerais */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+.header {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+.section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+h2 {
+    font-size: 47px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+.subheading {
+    font-size: 22px;
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+}
+.subtitulo {
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+}
+p {
+    font-size: 13px;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.progress-bar div {
+    height: 20px;
+    background-color: #00b107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 3px 0;            
+}
+.progress-20 div {
+    animation: progressAnimation20 2s forwards;
+    width: 20%;
+}
+.progress-40 div {
+    animation: progressAnimation40 2s forwards;
+    width: 40%;
+}
+.progress-60 div {
+    animation: progressAnimation60 2s forwards;
+    width: 60%;
+}
+.progress-80 div {
+    animation: progressAnimation80 2s forwards;
+    width: 80%;
+}
+.progress-100 div {
+    animation: progressAnimation100 2s forwards;
+    width: 100%;
+}
+@keyframes progressAnimation20 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20%;
+    }
+}
+@keyframes progressAnimation40 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40%;
+    }
+}
+@keyframes progressAnimation60 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+@keyframes progressAnimation80 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+@keyframes progressAnimation100 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.preco {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+}
+.price {
+    font-size: 44px;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+.riscado {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 20px);
+    height: calc(100% + 15px);
+}
+.riscado svg path {
+    stroke: #C93543;
+    stroke-width: 10;
+    fill: none;
+    opacity: 0;
+    stroke-dasharray: 0 1500;
+    animation: drawAndHide 10s infinite;
+}
+
+@keyframes drawAndHide {
+    0% {
+        stroke-dasharray: 0 1500;
+        opacity: 1;
+    }
+    20% {
+        stroke-dasharray: 1500 0;
+        opacity: 1;
+    }
+    70% {
+        stroke-dasharray: 1500 1500;
+        opacity: 1;
+    }
+    75% {
+        stroke-dasharray: 1500 1500;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.pay-button {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #00b304;
+    /*background: linear-gradient(45deg, #d1ff00, #74ea00);*/
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    animation: pulse 1.3s infinite;
+    min-width: 300px;
+    outline: none;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #02b3078c
+    }
+
+    100% {
+        box-shadow: 0 0 0 25px transparent
+    }
+}
+
+.faq {
+    text-align: left;
+    margin-top: 30px;
+}
+.faq-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.faq-question {
+    color: #666;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.faq-answer {
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 14px;
+    display: none; /* Inicialmente oculto */
+}
+.image img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto 0;
+}
+div .section .CTA {
+    margin: 30px 0 0 0;
+    padding: 0;
+    margin: auto;
+}
+
+i {
+    margin: 0 0 0 5px;
+}
+
+/*RESPONSIVIDADE*/
+@media (min-width: 700px) {
+    .header {
+        background-color: #FF0000;
+        color: #fff;
+        padding: 10px 0;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 38px;
+        margin: 0 0 50px 0;
+    }
+    h2 {
+        font-size: 47px;
+        font-weight: bold;
+        margin: 10px 0 0 0;
+    }
+    .progress-bar {
+        margin: 50px auto;
+    }
+    .subheading {
+        font-size: 22px;
+        color: #000;
+        font-weight: 700;
+        margin: 0;
+    }
+    p {
+        font-size: 20px;
+    }
+    .section.CTA {
+        margin: 10px 0 0 0;
+        padding: 0;
+        margin: 20px auto 0;
+    }            
+}
