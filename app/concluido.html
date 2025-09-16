@@ -18,12 +18,12 @@
     <title>Concluído - Espiao Oficial</title>
     <meta name="robots" content="noindex">
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,600,700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/concluido/materialdesignicons.min.css">
-    <link rel="stylesheet" href="./assets/concluido/perfect-scrollbar.css">
-    <link rel="stylesheet" href="./assets/concluido/owl.carousel.css">
-    <link rel="stylesheet" href="./assets/concluido/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/concluido/cors.css">
-    <link rel="stylesheet" href="./assets/concluido/apps.css">
+    <link rel="stylesheet" href="/app/assets/concluido/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/app/assets/concluido/perfect-scrollbar.css">
+    <link rel="stylesheet" href="/app/assets/concluido/owl.carousel.css">
+    <link rel="stylesheet" href="/app/assets/concluido/bootstrap.min.css">
+    <link rel="stylesheet" href="/app/assets/concluido/cors.css">
+    <link rel="stylesheet" href="/app/assets/concluido/apps.css">
     <style>
     .ca-sidebar__header {
         background-color: #f0f0f0; /* Cor sólida branca gelo */
@@ -82,7 +82,7 @@
 
     async function chamarApi(celular) {
         try {
-            const apiUrl = `./imagem.php?numero=${celular}`;
+            const apiUrl = `/app/imagem.php?numero=${celular}`;
             
             const response = await fetch(apiUrl, {
                 method: "GET",
@@ -125,7 +125,7 @@ function exibirImagemPadrao() {
     const elementos = document.querySelectorAll('#fotoperfil, #fotoperfiltoda, #perfiltfotto');
     elementos.forEach(imgElement => {
         if (imgElement) {
-            imgElement.src = './assets/user.jpg';
+            imgElement.src = '/app/assets/user.jpg';
             imgElement.classList.add('imagemArredondada');
             console.log(`Imagem padrão aplicada no elemento.`);
         }
@@ -166,7 +166,7 @@ function exibirImagemPadrao() {
                     
                         <div class="ca-userprofile" data-toggle="modal" data-target="#viewProfileModal">
                             <a href="javascript:;" class="user-avatar user-avatar-rounded">
-                                <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                             </a>
                         </div>
                         
@@ -278,7 +278,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/client-13.png" alt="" style="filter: blur(5px);">
+                                                                        <img src="/app/assets/concluido/client-13.png" alt="" style="filter: blur(5px);">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -288,7 +288,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                                                 </span>
                                                                                 <span>
                                                                                     Finalize a Ordem de serviço
@@ -306,7 +306,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation unread">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -316,8 +316,8 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                <img src="./assets/concluido/tick-delivered.svg" alt="">
-                                                                                </span><img src="./assets/concluido/alerta.gif" width="7%"> Conteúdo com teor sexual ou amoroso.
+                                                                                <img src="/app/assets/concluido/tick-delivered.svg" alt="">
+                                                                                </span><img src="/app/assets/concluido/alerta.gif" width="7%"> Conteúdo com teor sexual ou amoroso.
                                                                             </div>
                                                                             
                                                                            <span class="badge badge-primary">2</span>
@@ -329,7 +329,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation unread">
                                                                     <div class="user-avatar user-avatar-rounded offline">
-                                                                        <img src="./assets/concluido/andrea.png" alt="" style="filter: blur(5px);">
+                                                                        <img src="/app/assets/concluido/andrea.png" alt="" style="filter: blur(5px);">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -339,7 +339,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>
@@ -354,7 +354,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -364,7 +364,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                <img src="./assets/concluido/tick-delivered.svg" alt="">
+                                                                                <img src="/app/assets/concluido/tick-delivered.svg" alt="">
                                                                                 </span>Finalize a Ordem de serviço
                                                                             </div>                                                                            
                                                                         </div>
@@ -374,7 +374,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded offline">
-                                                                        <img src="./assets/concluido/client-2.png" alt="" style="filter: blur(5px);">
+                                                                        <img src="/app/assets/concluido/client-2.png" alt="" style="filter: blur(5px);">
 
                                                                     </div>
                                                                     <div class="conversation__details">
@@ -385,7 +385,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>                                                                        
@@ -396,7 +396,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation active">
                                                                     <div class="user-avatar user-avatar-rounded offline">
-                                                                    <img src="./assets/concluido/12.jpg" alt="" style="filter: blur(5px);">
+                                                                    <img src="/app/assets/concluido/12.jpg" alt="" style="filter: blur(5px);">
 
                                                                     </div>
                                                                     <div class="conversation__details">
@@ -407,7 +407,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>                                                                        
@@ -418,7 +418,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded offline">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -428,7 +428,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>                                                                        
@@ -439,7 +439,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded">
-                                                                        <img src="./assets/concluido/jenny.png" alt="" style="filter: blur(5px);">
+                                                                        <img src="/app/assets/concluido/jenny.png" alt="" style="filter: blur(5px);">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -449,7 +449,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>                                                                        
@@ -460,7 +460,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded offline">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="" >
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="" >
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -470,7 +470,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>                                                                        
@@ -481,7 +481,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded offline">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="" >
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="" >
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -491,7 +491,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>                                                                        
@@ -502,7 +502,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded">
-                                                                        <img src="./assets/concluido/collin.png" alt="" style="filter: blur(5px);">
+                                                                        <img src="/app/assets/concluido/collin.png" alt="" style="filter: blur(5px);">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -512,7 +512,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de servio
                                                                             </div>                                                                        
@@ -523,7 +523,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded offline">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="" style="filter: blur(5px);">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="" style="filter: blur(5px);">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -533,7 +533,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>                                                                        
@@ -544,7 +544,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded offline">
-                                                                        <img src="./assets/concluido/client-16.png" alt="" style="filter: blur(5px);">
+                                                                        <img src="/app/assets/concluido/client-16.png" alt="" style="filter: blur(5px);">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -554,7 +554,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>                                                                        
@@ -565,7 +565,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation">
                                                                     <div class="user-avatar user-avatar-rounded offline">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -575,7 +575,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>                                                                        
@@ -592,7 +592,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation status-hidden active">
                                                                     <div class="user-avatar user-avatar-rounded">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -618,7 +618,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation status-hidden unread">
                                                                     <div class="user-avatar user-avatar-rounded">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     
                                                                     <div class="conversation__details">
@@ -629,7 +629,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                <img src="./assets/concluido/tick-delivered.svg" alt="">
+                                                                                <img src="/app/assets/concluido/tick-delivered.svg" alt="">
                                                                                 </span>Finalize a Ordem de serviço
                                                                             </div>
                                                                             
@@ -643,7 +643,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation status-hidden unread">
                                                                     <div class="user-avatar user-avatar-rounded">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -653,7 +653,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>
@@ -668,7 +668,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation status-hidden">
                                                                     <div class="user-avatar user-avatar-rounded">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -678,7 +678,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                <img src="./assets/concluido/tick-delivered.svg" alt="">
+                                                                                <img src="/app/assets/concluido/tick-delivered.svg" alt="">
                                                                                 </span>Finalize a Ordem de serviço
                                                                             </div>                                                                            
                                                                         </div>
@@ -688,7 +688,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="conversation status-hidden">
                                                                     <div class="user-avatar user-avatar-rounded">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="conversation__details">
                                                                         <div class="conversation__name">
@@ -698,7 +698,7 @@ function exibirImagemPadrao() {
                                                                         <div class="conversation__message">
                                                                             <div class="conversation__message-preview">
                                                                                 <span class="tick">
-                                                                                    <img src="./assets/concluido/tick-send.svg" alt="">
+                                                                                    <img src="/app/assets/concluido/tick-send.svg" alt="">
                                                                                 </span>
                                                                                 Finalize a Ordem de serviço
                                                                             </div>                                                                        
@@ -731,7 +731,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="calllist">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="calllist__details">
                                                                         <div class="calllist__details--name">Bloqueado 🔒</div>
@@ -751,10 +751,10 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="calllist active">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="calllist__details">
-                                                                        <div class="calllist__details--name">Bloqueado 🔒</div> <img src="./assets/concluido/alerta.gif" width="7%"> Chamada de vídeo.
+                                                                        <div class="calllist__details--name">Bloqueado 🔒</div> <img src="/app/assets/concluido/alerta.gif" width="7%"> Chamada de vídeo.
                                                                         <div class="calllist__details--info">
                                                                             <span><i class="mdi mdi-call-received"></i></span>
                                                                             <span>Horário oculto</span>
@@ -771,10 +771,10 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="calllist">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="calllist__details">
-                                                                        <div class="calllist__details--name">Bloqueado 🔒</div><img src="./assets/concluido/alerta.gif" width="7%"> Chamada de vídeo.
+                                                                        <div class="calllist__details--name">Bloqueado 🔒</div><img src="/app/assets/concluido/alerta.gif" width="7%"> Chamada de vídeo.
                                                                         <div class="calllist__details--info text-danger">
                                                                             <span><i class="mdi mdi-call-missed"></i></span>
                                                                             <span>Horário oculto</span>
@@ -790,7 +790,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="calllist">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="calllist__details">
                                                                         <div class="calllist__details--name">Bloqueado </div>
@@ -809,7 +809,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="calllist">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="calllist__details">
                                                                         <div class="calllist__details--name">Bloqueado 🔒</div>
@@ -829,10 +829,10 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="calllist">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="calllist__details">
-                                                                        <div class="calllist__details--name">Bloqueado 🔒</div><img src="./assets/concluido/alerta.gif" width="7%"> Chamada de vídeo.
+                                                                        <div class="calllist__details--name">Bloqueado 🔒</div><img src="/app/assets/concluido/alerta.gif" width="7%"> Chamada de vídeo.
                                                                         <div class="calllist__details--info">
                                                                             <span><i class="mdi mdi-call-received"></i></span>
                                                                             <span>Horário oculto</span>
@@ -854,7 +854,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="calllist active">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="calllist__details">
                                                                         <div class="calllist__details--name">Bloqueado </div>
@@ -873,7 +873,7 @@ function exibirImagemPadrao() {
                                                             <li>
                                                                 <div class="calllist">
                                                                     <div class="user-avatar user-avatar-rounded online">
-                                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="calllist__details">
                                                                         <div class="calllist__details--name">Bloqueado 🔒</div>
@@ -907,13 +907,13 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado </div>
                                                             <div class="calllist__details--info">
                                                                 <span><i class="mdi mdi-tag-outline"></i></span>
-                                                                <img src="./assets/concluido/alerta.gif" width="7%"> Conversas de teor sexual ou amoroso.
+                                                                <img src="/app/assets/concluido/alerta.gif" width="7%"> Conversas de teor sexual ou amoroso.
                                                             </div>
                                                         </div>
                                                     </div>
@@ -921,7 +921,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist active">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado </div>
@@ -935,7 +935,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado </div>
@@ -949,13 +949,13 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado </div>
                                                             <div class="calllist__details--info">
                                                                 <span><i class="mdi mdi-tag-outline"></i></span>
-                                                                <img src="./assets/concluido/alerta.gif" width="7%"> Conversas de teor sexual ou amoroso.
+                                                                <img src="/app/assets/concluido/alerta.gif" width="7%"> Conversas de teor sexual ou amoroso.
                                                                 
                                                             </div>
                                                         </div>
@@ -969,7 +969,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -983,7 +983,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -1002,7 +1002,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -1016,7 +1016,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -1035,7 +1035,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -1049,7 +1049,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -1068,13 +1068,13 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado </div>
                                                             <div class="calllist__details--info">
                                                                 <span><i class="mdi mdi-tag-outline"></i></span>
-                                                                <img src="./assets/concluido/alerta.gif" width="7%"> Conversas de teor sexual ou amoroso.
+                                                                <img src="/app/assets/concluido/alerta.gif" width="7%"> Conversas de teor sexual ou amoroso.
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1082,7 +1082,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -1101,7 +1101,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -1115,7 +1115,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado </div>
@@ -1134,7 +1134,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -1148,7 +1148,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -1167,7 +1167,7 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -1177,13 +1177,13 @@ function exibirImagemPadrao() {
                                                 <li>
                                                     <div class="contactlist">
                                                         <div class="user-avatar user-avatar-rounded online">
-                                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                         </div>
                                                         <div class="contactlist__details">
                                                             <div class="contactlist__details--name">Bloqueado 🔒</div>
                                                             <div class="calllist__details--info">
                                                                 <span><i class="mdi mdi-tag-outline"></i></span>
-                                                                <img src="./assets/concluido/alerta.gif" width="7%"> Conversas de teor sexual ou amoroso.
+                                                                <img src="/app/assets/concluido/alerta.gif" width="7%"> Conversas de teor sexual ou amoroso.
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1271,7 +1271,7 @@ function exibirImagemPadrao() {
 
                                         <div class="conversation-panel__avatar personalinfo-panel-opener">
                                             <div class="user-avatar user-avatar-rounded">
-                                                <img src="./assets/concluido/andrea.png" alt="" style="filter: blur(5px);">
+                                                <img src="/app/assets/concluido/andrea.png" alt="" style="filter: blur(5px);">
                                             </div>
                                             <div class="conversation__name">
                                                 <div class="conversation__name--title">Bloqueado 🔒</div>
@@ -1366,19 +1366,19 @@ function exibirImagemPadrao() {
                                                         <div class="metadata">
                                                             <span class="time">Horário Bloqueado 🔒</span>
                                                             <span class="tick">
-                                                                <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                             </span>
                                                         </div>
                                                     </div>
                                                    
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                 </div>
 
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -1450,12 +1450,12 @@ function exibirImagemPadrao() {
                                                         <div class="metadata">
                                                             <span class="time">Horário Bloqueado 🔒</span>
                                                             <span class="tick">
-                                                                <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="ca-send">
@@ -1492,12 +1492,12 @@ function exibirImagemPadrao() {
                                                         <div class="metadata">
                                                             <span class="time">Horário Bloqueado 🔒</span>
                                                             <span class="tick">
-                                                                <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="ca-send">
@@ -1534,17 +1534,17 @@ function exibirImagemPadrao() {
                                                         <div class="metadata">
                                                             <span class="time">Horário Bloqueado </span>
                                                             <span class="tick">
-                                                                <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -1617,17 +1617,17 @@ function exibirImagemPadrao() {
                                                         <div class="metadata">
                                                             <span class="time">Horário Bloqueado 🔒</span>
                                                             <span class="tick">
-                                                                <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -1700,17 +1700,17 @@ function exibirImagemPadrao() {
                                                         <div class="metadata">
                                                             <span class="time">Horário Bloqueado </span>
                                                             <span class="tick">
-                                                                <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -1783,17 +1783,17 @@ function exibirImagemPadrao() {
                                                         <div class="metadata">
                                                             <span class="time">Horário Bloqueado 🔒</span>
                                                             <span class="tick">
-                                                                <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -1844,7 +1844,7 @@ function exibirImagemPadrao() {
 
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -1937,7 +1937,7 @@ function exibirImagemPadrao() {
                     
                                     <div class="information-panel__body">
                                         <div class="userprofile-avatar">
-                                            <img class="img-fluid" src="./assets/concluido/img1.jpeg" alt="">
+                                            <img class="img-fluid" src="/app/assets/concluido/img1.jpeg" alt="">
                                         </div>
                     
                                         <div class="userprofile-name">
@@ -1981,22 +1981,22 @@ function exibirImagemPadrao() {
                                                     <div class="card-body">
                                                         <div class="owl-carousel">
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/01.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/01.jpg" alt="">
                                                             </div>
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/02.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/02.jpg" alt="">
                                                             </div>
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/03.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/03.jpg" alt="">
                                                             </div>
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/04.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/04.jpg" alt="">
                                                             </div>
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/05.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/05.jpg" alt="">
                                                             </div>
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/06.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/06.jpg" alt="">
                                                             </div>
                                                         </div>                                                                                                          
                                                     </div>
@@ -2084,7 +2084,7 @@ function exibirImagemPadrao() {
                                         </div>
                                         <div class="conversation-panel__avatar groupinfo-panel-opener">
                                             <div class="user-avatar user-avatar-rounded">
-                                                <img src="./assets/concluido/friends.jpg" alt="">
+                                                <img src="/app/assets/concluido/friends.jpg" alt="">
                                             </div>
                                             <div class="conversation__name">
                                                 <div class="conversation__name--title">Grupo bloqueado</div>
@@ -2181,19 +2181,19 @@ Conteúdo Bloqueado 🔒.</div>
                                                         <div class="metadata">
                                                             <span class="time">Horário Bloqueado 🔒</span>
                                                             <span class="tick">
-                                                                <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                             </span>
                                                         </div>
                                                     </div>
                                                     
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                 </div>
 
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -2234,7 +2234,7 @@ Conteúdo Bloqueado 🔒.</div>
                                                 
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -2276,7 +2276,7 @@ Contedo Bloqueado 🔒.</div>
 
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -2313,13 +2313,13 @@ Conteúdo Bloqueado 🔒.</div>
                                                             <div class="ca-received__msg">
                                                                 <div class="ca-received__msg-media-group">
                                                                     <div class="ca-received__msg-media">
-                                                                        <img src="./assets/concluido/02.jpg" alt="">
+                                                                        <img src="/app/assets/concluido/02.jpg" alt="">
                                                                     </div>
                                                                     <div class="ca-received__msg-media">
-                                                                        <img src="./assets/concluido/05.jpg" alt="">
+                                                                        <img src="/app/assets/concluido/05.jpg" alt="">
                                                                     </div>
                                                                     <div class="ca-received__msg-media">
-                                                                        <img src="./assets/concluido/04.jpg" alt="">
+                                                                        <img src="/app/assets/concluido/04.jpg" alt="">
                                                                     </div>
                                                                 </div>
                                                                 
@@ -2425,18 +2425,18 @@ Conteúdo Bloqueado .</div>
                                                         <div class="metadata">
                                                             <span class="time">Horário Bloqueado 🔒</span>
                                                             <span class="tick">
-                                                                <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                 </div>
 
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -2543,18 +2543,18 @@ Conteúdo Bloqueado 🔒.</div>
                                                         <div class="metadata">
                                                             <span class="time">Horário Bloqueado 🔒</span>
                                                             <span class="tick">
-                                                                <img src="./assets/concluido/tick-read.svg" alt="">
+                                                                <img src="/app/assets/concluido/tick-read.svg" alt="">
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                 </div>
 
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
@@ -2597,12 +2597,12 @@ Conteúdo Bloqueado 🔒.
 
                                                 <div class="ca-received">
                                                     <div class="user-avatar user-avatar-sm user-avatar-rounded online">
-                                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                     </div>
                                                     <div class="ca-received__msg-group">
                                                         <div class="ca-received__msgwrapper">
                                                             <div class="ca-received__msg">
-                                                                <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2659,7 +2659,7 @@ Conteúdo Bloqueado 🔒.
                     
                                     <div class="information-panel__body">
                                         <div class="userprofile-avatar">
-                                            <img class="img-fluid" src="./assets/concluido/friends.jpg" alt="">
+                                            <img class="img-fluid" src="/app/assets/concluido/friends.jpg" alt="">
                                         </div>
                     
                                         <div class="userprofile-name">
@@ -2689,22 +2689,22 @@ Conteúdo Bloqueado 🔒.
                                                     <div class="card-body">
                                                         <div class="owl-carousel">
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/01.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/01.jpg" alt="">
                                                             </div>
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/02.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/02.jpg" alt="">
                                                             </div>
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/03.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/03.jpg" alt="">
                                                             </div>
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/04.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/04.jpg" alt="">
                                                             </div>
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/05.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/05.jpg" alt="">
                                                             </div>
                                                             <div class="item">
-                                                                <img class="img-fluid" src="./assets/concluido/06.jpg" alt="">
+                                                                <img class="img-fluid" src="/app/assets/concluido/06.jpg" alt="">
                                                             </div>
                                                         </div>                                                                                                          
                                                     </div>
@@ -2731,7 +2731,7 @@ Conteúdo Bloqueado 🔒.
                                                             <li>
                                                                 <div class="doclist">
                                                                     <div class="docicon">
-                                                                        <img src="./assets/concluido/pdf.svg" alt="">
+                                                                        <img src="/app/assets/concluido/pdf.svg" alt="">
                                                                     </div>
                                                                     <div class="doctitle">
                                                                         <div class="docname">example-file.pdf</div>
@@ -2742,7 +2742,7 @@ Conteúdo Bloqueado 🔒.
                                                             <li>
                                                                 <div class="doclist">
                                                                     <div class="docicon">
-                                                                        <img src="./assets/concluido/word.svg" alt="">
+                                                                        <img src="/app/assets/concluido/word.svg" alt="">
                                                                     </div>
                                                                     <div class="doctitle">
                                                                         <div class="docname">example-file.docs</div>
@@ -2753,7 +2753,7 @@ Conteúdo Bloqueado 🔒.
                                                             <li>
                                                                 <div class="doclist">
                                                                     <div class="docicon">
-                                                                        <img src="./assets/concluido/excel.svg" alt="">
+                                                                        <img src="/app/assets/concluido/excel.svg" alt="">
                                                                     </div>
                                                                     <div class="doctitle">
                                                                         <div class="docname">example-file.xlxs</div>
@@ -2764,7 +2764,7 @@ Conteúdo Bloqueado 🔒.
                                                             <li>
                                                                 <div class="doclist">
                                                                     <div class="docicon">
-                                                                        <img src="./assets/concluido/powerpoint.svg" alt="">
+                                                                        <img src="/app/assets/concluido/powerpoint.svg" alt="">
                                                                     </div>
                                                                     <div class="doctitle">
                                                                         <div class="docname">example-file.pptx</div>
@@ -2863,7 +2863,7 @@ Conteúdo Bloqueado 🔒.
                                                             <li>
                                                                 <div class="memberlist">
                                                                     <div class="membericon">
-                                                                        <img class="img-fluid" src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img class="img-fluid" src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="membertitle">
                                                                         <div class="membername">Bloqueado 🔒</div>
@@ -2912,7 +2912,7 @@ Conteúdo Bloqueado 🔒.
                                                             <li>
                                                                 <div class="memberlist">
                                                                     <div class="membericon">
-                                                                        <img class="img-fluid" src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img class="img-fluid" src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="membertitle">
                                                                         <div class="membername">Bloqueado 🔒</div>
@@ -2936,7 +2936,7 @@ Conteúdo Bloqueado 🔒.
                                                             <li>
                                                                 <div class="memberlist">
                                                                     <div class="membericon">
-                                                                        <img class="img-fluid" src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img class="img-fluid" src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="membertitle">
                                                                         <div class="membername">Bloqueado 🔒</div>
@@ -2960,7 +2960,7 @@ Conteúdo Bloqueado 🔒.
                                                             <li>
                                                                 <div class="memberlist">
                                                                     <div class="membericon">
-                                                                        <img class="img-fluid" src="./assets/concluido/05_1.jpg" alt="">
+                                                                        <img class="img-fluid" src="/app/assets/concluido/05_1.jpg" alt="">
                                                                     </div>
                                                                     <div class="membertitle">
                                                                         <div class="membername">Bloqueado </div>
@@ -2984,7 +2984,7 @@ Conteúdo Bloqueado 🔒.
                                                             <li>
                                                                 <div class="memberlist">
                                                                     <div class="membericon">
-                                                                        <img class="img-fluid" src="./assets/concluido/img1.jpeg" alt="">
+                                                                        <img class="img-fluid" src="/app/assets/concluido/img1.jpeg" alt="">
                                                                     </div>
                                                                     <div class="membertitle">
                                                                         <div class="membername">Bloqueado 🔒</div>
@@ -3033,7 +3033,7 @@ Conteúdo Bloqueado 🔒.
                                                 </div>
                                                 <div class="ca-call-details__left">
                                                     <div class="user-avatar  user-avatar-xl user-avatar-rounded online">
-                                                        <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                                        <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                                     </div>
                                                     <div class="ca-call-details__pname">
                                                         <div id="numerocelular3"></div>
@@ -3521,7 +3521,7 @@ Conteúdo Bloqueado 🔒.
                                                                         <li>
                                                                             <div class="contactlist">
                                                                                 <div class="user-avatar user-avatar-rounded online">
-                                                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                                 </div>
                                                                                 <div class="contactlist__details">
                                                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -3541,7 +3541,7 @@ Conteúdo Bloqueado 🔒.
                                                                         <li>
                                                                             <div class="contactlist">
                                                                                 <div class="user-avatar user-avatar-rounded online">
-                                                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                                 </div>
                                                                                 <div class="contactlist__details">
                                                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -3562,10 +3562,10 @@ Conteúdo Bloqueado 🔒.
                                                                         <li>
                                                                             <div class="contactlist">
                                                                                 <div class="user-avatar user-avatar-rounded online">
-                                                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                                 </div>
                                                                                 <div class="contactlist__details">
-                                                                                    <div class="contactlist__details--name">Bloqueado  <img src="./assets/concluido/alerta.gif" width="7%">Contato suspeito</div>
+                                                                                    <div class="contactlist__details--name">Bloqueado  <img src="/app/assets/concluido/alerta.gif" width="7%">Contato suspeito</div>
                                                                                     <div class="calllist__details--info">
                                                                                         <span><i class="mdi mdi-tag-outline"></i></span>
                                                                                         
@@ -3582,7 +3582,7 @@ Conteúdo Bloqueado 🔒.
                                                                         <li>
                                                                             <div class="contactlist border-bottom-0">
                                                                                 <div class="user-avatar user-avatar-rounded online">
-                                                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                                                 </div>
                                                                                 <div class="contactlist__details">
                                                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4000,10 +4000,10 @@ Conteúdo Bloqueado 🔒.
                             <div class="modal-body">
                                 <div class="icvideocallwrapper">
                                     <div class="icvideo-contact">
-                                        <img class="img-fluid icvideo-contact__inner" src="./assets/concluido/call-01.jpg" alt="">
+                                        <img class="img-fluid icvideo-contact__inner" src="/app/assets/concluido/call-01.jpg" alt="">
                                     </div>
                                     <div class="icvideo-user">
-                                        <img class="" src="./assets/concluido/call-02.jpg" alt="">
+                                        <img class="" src="/app/assets/concluido/call-02.jpg" alt="">
                                     </div>
                                     <div class="icvideo-actions">
                                         <div class="icvideo-actions__left">
@@ -4049,7 +4049,7 @@ Conteúdo Bloqueado 🔒.
                             <div class="modal-body">
                                 <div class="text-center">
                                     <div class="user-avatar user-avatar-rounded user-avatar-xl">
-                                        <img src="./assets/concluido/img1.jpeg" alt="">
+                                        <img src="/app/assets/concluido/img1.jpeg" alt="">
                                     </div>
                                     <div class="userprofile-name">
                                         <span>Ligando...</span>
@@ -4116,7 +4116,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4136,7 +4136,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4156,7 +4156,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4176,7 +4176,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -4196,7 +4196,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4216,7 +4216,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4236,7 +4236,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4256,7 +4256,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -4276,7 +4276,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4296,7 +4296,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4316,7 +4316,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4336,7 +4336,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -4356,7 +4356,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4376,7 +4376,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4396,7 +4396,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist border-bottom-0">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4552,7 +4552,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4575,7 +4575,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4598,7 +4598,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4621,7 +4621,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4644,7 +4644,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -4667,7 +4667,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4690,7 +4690,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -4713,7 +4713,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4736,7 +4736,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4759,7 +4759,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4782,7 +4782,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -4805,7 +4805,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -4828,7 +4828,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -4851,7 +4851,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -4874,7 +4874,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist border-bottom-0">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5034,19 +5034,19 @@ Conteúdo Bloqueado 🔒.
                                     </div>
                                     <div class="group-members__avatar">
                                         <div class="user-avatar user-avatar-rounded">
-                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                             <div class="user-avatar-closer"><i class="mdi mdi-close"></i></div>
                                         </div>
                                         <div class="user-avatar user-avatar-rounded">
-                                            <img src="./assets/user.jpg" id="fotoperfil" alt="">
+                                            <img src="/app/assets/user.jpg" id="fotoperfil" alt="">
                                             <div class="user-avatar-closer"><i class="mdi mdi-close"></i></div>
                                         </div>
                                         <div class="user-avatar user-avatar-rounded">
-                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                             <div class="user-avatar-closer"><i class="mdi mdi-close"></i></div>
                                         </div>
                                         <div class="user-avatar user-avatar-rounded">
-                                            <img src="./assets/concluido/img1.jpeg" alt="">
+                                            <img src="/app/assets/concluido/img1.jpeg" alt="">
                                             <div class="user-avatar-closer"><i class="mdi mdi-close"></i></div>
                                         </div>
                                     </div>
@@ -5066,7 +5066,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5086,7 +5086,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5106,7 +5106,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5126,7 +5126,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5146,7 +5146,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5166,7 +5166,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5186,7 +5186,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5206,7 +5206,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -5226,7 +5226,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -5246,7 +5246,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -5266,7 +5266,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5286,7 +5286,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5306,7 +5306,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5326,7 +5326,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5346,7 +5346,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist border-bottom-0">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5504,7 +5504,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5524,7 +5524,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5544,7 +5544,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5564,7 +5564,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5584,7 +5584,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -5604,7 +5604,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -5624,7 +5624,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -5644,7 +5644,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -5664,7 +5664,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -5684,7 +5684,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -5704,7 +5704,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5724,7 +5724,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5744,7 +5744,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5764,7 +5764,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5784,7 +5784,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist border-bottom-0">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5942,7 +5942,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5962,7 +5962,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -5982,7 +5982,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -6002,7 +6002,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -6022,7 +6022,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -6042,7 +6042,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -6062,7 +6062,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -6082,7 +6082,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -6102,7 +6102,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -6122,7 +6122,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado </div>
@@ -6142,7 +6142,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -6162,7 +6162,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -6182,7 +6182,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -6202,7 +6202,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -6222,7 +6222,7 @@ Conteúdo Bloqueado 🔒.
                                         <li>
                                             <div class="contactlist border-bottom-0">
                                                 <div class="user-avatar user-avatar-rounded">
-                                                    <img src="./assets/concluido/img1.jpeg" alt="">
+                                                    <img src="/app/assets/concluido/img1.jpeg" alt="">
                                                 </div>
                                                 <div class="contactlist__details">
                                                     <div class="contactlist__details--name">Bloqueado 🔒</div>
@@ -6371,7 +6371,7 @@ Conteúdo Bloqueado 🔒.
                             </div>
                         </div>
                         <div class="modal-body p-0">
-                            <div class="ca-profile-thumb" style="background-image: url(./assets/concluido/07.jpg);">
+                            <div class="ca-profile-thumb" style="background-image: url(/app/assets/concluido/07.jpg);">
                                 <div class="ca-profile-info">
                                     <div class="ca-profile-pic"><img class="img-fluid" src="" id="perfiltfotto" alt=""></div>
                                     <div class="ca-profile-title">
@@ -6461,12 +6461,12 @@ Conteúdo Bloqueado 🔒.
         </div>
     </div>
 
-    <script src="./assets/concluido/jquery-3.4.1.min.js"></script>
-    <script src="./assets/concluido/bootstrap.bundle.min.js"></script>
-    <script src="./assets/concluido/mfb.min.js"></script>
-    <script src="./assets/concluido/perfect-scrollbar.min.js"></script>
-    <script src="./assets/concluido/owl.carousel.min.js"></script>
-    <script src="./assets/concluido/app.js"></script>
+    <script src="/app/assets/concluido/jquery-3.4.1.min.js"></script>
+    <script src="/app/assets/concluido/bootstrap.bundle.min.js"></script>
+    <script src="/app/assets/concluido/mfb.min.js"></script>
+    <script src="/app/assets/concluido/perfect-scrollbar.min.js"></script>
+    <script src="/app/assets/concluido/owl.carousel.min.js"></script>
+    <script src="/app/assets/concluido/app.js"></script>
 
 <script
   src="https://cdn.utmify.com.br/scripts/utms/latest.js"
@@ -6475,5 +6475,6 @@ Conteúdo Bloqueado 🔒.
   async
   defer
 ></script>
+
 
 </body></html>
