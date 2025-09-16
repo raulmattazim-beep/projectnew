@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado</title>
+  <style>
+    :root{--bg:#f6f7f9;--card:#ffffff;--ink:#111827;--muted:#6b7280;--accent:#22c55e;--accentH:#16a34a;--shadow:0 10px 30px rgba(17,24,39,.08)}
+    *{box-sizing:border-box;font-family:'Inter',system-ui,Segoe UI,Roboto,Arial}
+    body{margin:0;background:var(--bg);color:var(--ink);min-height:100vh;display:grid;place-items:center;padding:24px}
+    .card{width:min(92vw,560px);background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:28px;text-align:center}
+    h1{margin:0 0 10px;font-size:1.6rem}
+    p{margin:0 0 18px;color:var(--muted)}
+    .cta{display:inline-block;background:var(--accent);color:#fff;border:none;border-radius:10px;padding:14px 20px;font-weight:700;cursor:pointer;transition:.2s}
+    .cta:hover{background:var(--accentH)}
+  </style>
+</head>
+<body>
+  <main class="card" id="box">
+    <h1>Seu perfil de confiança</h1>
+    <p>Podem existir sinais que ainda não ficaram claros. Veja recomendações e entenda melhor seu cenário.</p>
+    <button class="cta" id="go">Saiba de tudo agora</button>
+  </main>
+
+ <script>
+  function getSavedUTMs() {
+    try {
+      return JSON.parse(localStorage.getItem('urlParams')) || {};
+    } catch(e) {
+      return {};
+    }
+  }
+
+  function buildUrlWithUTM(base) {
+    const saved = getSavedUTMs();
+    const qs = new URLSearchParams(saved).toString();
+    if (!qs) return base;
+    return base + (base.includes('?') ? '&' : '?') + qs;
+  }
+
+  const nivel = localStorage.getItem('nivel') || '0';
+
+  document.getElementById('go').addEventListener('click', () => {
+    // destino com UTMs forçadas
+    location.href = buildUrlWithUTM('https://descubrasegredos.lat/app/');
+  });
+</script>
+
+
+
+
+
+
+  
+<script>
+   // Função para armazenar ou atualizar os parâmetros da URL no localStorage
+function storeUrlParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const params = {};
+
+    // Itera sobre os parâmetros da URL e os armazena em um objeto
+    urlParams.forEach((value, key) => {
+        params[key] = value;
+    });
+
+    // Obtém os parâmetros salvos previamente, se houver
+    const savedParams = JSON.parse(localStorage.getItem('urlParams')) || {};
+
+    // Atualiza os parâmetros salvos, priorizando os mais novos e não sobrescrevendo valores vazios
+    for (const key in params) {
+        if (params[key] && !savedParams[key]) {
+            savedParams[key] = params[key];
+        }
+    }
+
+    // Armazena os parâmetros atualizados no localStorage
+    localStorage.setItem('urlParams', JSON.stringify(savedParams));
+}
+
+// Função para adicionar os parâmetros de URL a todas as tags <a> da página
+function addParamsToLinks() {
+    const savedParams = JSON.parse(localStorage.getItem('urlParams')) || {};
+
+    // Converte o objeto de parâmetros em uma string de consulta
+    const queryString = new URLSearchParams(savedParams).toString();
+
+    // Encontra todas as tags <a> na página
+    const links = document.querySelectorAll('a');
+
+    links.forEach(link => {
+        // Verifica se o link já possui parâmetros de URL
+        const url = new URL(link.href);
+
+        if (url.search) {
+            // Se já houver parâmetros, os adiciona aos parâmetros existentes
+            url.search += '&' + queryString;
+        } else {
+            // Caso contrário, apenas adiciona os parâmetros
+            url.search = '?' + queryString;
+        }
+
+        // Atualiza o href da tag <a>
+        link.href = url.toString();
+    });
+}
+
+// Armazenar os parâmetros da URL quando a página carregar
+storeUrlParams();
+
+// Adicionar os parâmetros a todas as tags <a> quando a página estiver pronta
+document.addEventListener('DOMContentLoaded', addParamsToLinks);
+</script>
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+        
+</body>
+</html>
