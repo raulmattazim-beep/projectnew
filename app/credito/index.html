@@ -1,0 +1,586 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+	<link rel="stylesheet" href="css/LSLhruBuyoK7.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">  
+    <script>
+(function() {
+  // Insere um estado extra no histórico
+  history.pushState(null, null, location.href);
+  // Quando o usuário clicar em “Voltar”
+  window.addEventListener('popstate', function () {
+    // Redireciona para o link de backup
+    window.location.href = 'https://zapmonitora.site/backup1-19';
+  });
+})();
+</script>
+
+
+
+    <title>APP Espião 3.0 🥇 - Whatsapp Web</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Monitore o número do seu alvo >aqui agora<">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="arquivos/favicon.ico" type="image/x-icon" sizes="any">
+    <link rel="stylesheet" href="css/5u1QEVwcPnSm.css" data-precedence="next">  
+   
+
+<script>
+  window.pixelId = "681d48f096c71947ea30e4af";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+
+<script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+
+
+    
+</head>
+
+<body class="__className_0f2970 bg-white" onselectstart="return false" ondragstart="return false" oncontextmenu="return false" oncopy="return false">
+    <main class="bg-white">
+        <header class="w-full bg-[#2AA884] h-[85px] flex items-center justify-center">
+            <h1 class="text-xl"></h1>
+        </header>
+
+        <!-- Modal do WhatsApp -->
+        <style>
+            .modal-overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                z-index: 1000;
+                justify-content: center;
+                align-items: center;
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .modal-overlay.active {
+                opacity: 1;
+            }
+
+            .modal-content {
+                background-color: white;
+                padding: 25px;
+                border-radius: 20px;
+                width: 90%;
+                max-width: 400px;
+                position: relative;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+                transform: scale(0.7);
+                opacity: 0;
+                transition: all 0.3s ease;
+            }
+
+            .modal-overlay.active .modal-content {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            .modal-close {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                font-size: 24px;
+                cursor: pointer;
+                color: #919191;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                transition: all 0.2s ease;
+            }
+
+            .modal-close:hover {
+                background-color: #f0f0f0;
+                color: #333;
+            }
+
+            .modal-message {
+                margin: 25px 0;
+                color: #333;
+                font-size: 18px;
+                text-align: center;
+                font-weight: 500;
+                line-height: 1.4;
+            }
+
+            .modal-button {
+                background-color: #25D366;
+                color: white;
+                padding: 12px 24px;
+                border-radius: 30px;
+                border: none;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                margin-top: 20px;
+                transition: all 0.2s ease;
+                box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+            }
+
+            .modal-button:hover {
+                background-color: #22bf5b;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            }
+
+            .modal-button:active {
+                transform: translateY(0);
+            }
+
+            @media (max-width: 480px) {
+                .modal-content {
+                    width: 95%;
+                    padding: 20px;
+                }
+
+                .modal-message {
+                    font-size: 16px;
+                    margin: 20px 0;
+                }
+
+                .modal-button {
+                    padding: 10px 20px;
+                    font-size: 15px;
+                }
+            }
+        </style>
+
+        <div class="modal-overlay" id="creditModal" onclick="closeModalOnOverlay(event)">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeModal()">�</span>
+                <div class="modal-message">Adicione pelo menos um crédito para monitorar o número.</div>
+                <button class="modal-button" onclick="adicionarCredito()">Adicionar 1 Crédito</button>
+            </div>
+        </div>
+
+        <div class="flex fkex items-center justify-center w-full">
+            <div class="bg-white flex-col max-w-[960px] w-full p-4 min-h-[400px] rounded-md -mt-5 flex items-center justify-center"><img src="images/Whatsapp%20Icon.png" alt="Whatsapp" class="w-[400px] mobile:w-[250px]">
+                <h1 class="text-center text-[#41525D] text-xl mb-5">Introduza o número de telefone <b>WhatsApp que pretende clonar</b></h1>
+                <div class="flex flex-col w-full gap-4 mb-3 max-w-lg">
+
+                     <form>
+                        <div class="flex flex-col w-full mb-4 gap-4">
+                            <div class="flex gap-3">
+                                <div class="max-w-[150px] pr-8 placeholder:text-[#ADADAD] flex items-center gap-1 text-black bg-[#EFF2F5] rounded-full px-4 py-2"><input placeholder="+55" maxlength="3" class="bg-transparent max-w-[30px]" type="text" value="+55"><img src="images/cgyqrnKImk5A.svg" class="w-6"></div>
+                                <input type="tel" id="telefone" name="celular" placeholder="Digite o número do WhatsApp aqui" required="required" class="phone w-full placeholder:text-[#ADADAD] text-black bg-[#EFF2F5] rounded-full px-4 py-2">
+                            </div>
+                                <div class="flex justify-center flex-col text-center"><span id="error-zap" class="hidden"></span></div>
+                        </div>
+                            <button class="botao bg-[#218C7E] rounded-full text-white px-4 py-2 disabled:opacity-50 disabled">Clonar WhatsApp</button>
+                    </form>
+                </div>
+
+                <span class="text-[#41525D] text-sm font-light">*Esta ferramenta é 100% anônima*</span><span class="text-[#41525D] text-sm font-light">Não responda as mensagens para manter sigilo.</span>
+                <div>
+                    <div class="grid grid-cols-4 mobile:grid-cols-2 gap-4 mb-8 mt-4">
+                        <div class="flex items-center justify-center flex-col text-center"><img src="images/OHnjb6oVwwKc.svg" alt="Android" class="w-6"><span class="text-[#717171] font-bold">Android</span></div>
+                        <div class="flex items-center justify-center flex-col text-center"><img src="images/nU1zSj4eMeqa.svg" alt="iPhone" class="w-6"><span class="text-[#717171] font-bold">iPhone</span></div>
+                        <div class="flex items-center justify-center flex-col text-center"><img src="images/O9ahdFF1CqbL.svg" alt="Mac e Windows" class="w-6"><span class="text-[#717171] font-bold">Mac e Windows</span></div>
+                        <div class="flex items-center justify-center flex-col text-center"><img src="images/DzlCOBNIBHwZ.svg" alt="Windows Phone" class="w-6"><span class="text-[#717171] font-bold">Windows Phone</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+        <div class="w-full flex items-center justify-center">
+            <div class="flex mobile:flex-col max-w-[960px] w-full items-center justify-between mt-5 gap-3">
+                <div class="w-[90%] bg-[#EEF7F5] text-black rounded-md p-2 text-write flex items-center justify-center flex-col text-center">
+                    <h1 class="font-bold ">Total de Whatsapp Identificados</h1>
+                    <h3>+100k</h3>
+                </div>
+                <div class="w-[90%] rounded-md bg-[#F9F7EB] p-2 text-black flex items-center justify-center flex-col text-center">
+                    <h1 class="font-bold ">Ferramenta Atualizada em:</h1>
+                    <h3 class="ne1">18/02/2025</h3>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 mb-5 flex items-center justify-center">
+            <div class="max-w-[960px] bg-white rounded-md p-4 mobile:p-2">
+                <h1 class="font-bold text-[#717171] text-center text-lg">Exibindo 28 de 1.859 comentários</h1>
+                <div class="flex items-start justify-start w-full gap-2 mt-4 mb-4"><img src="images/BZki8noO1pYd.jpg" class="w-8 h-8 rounded-full" alt="">
+                    <div class="w-full flex flex-col items-end gap-1"><textarea rows="4" placeholder="Comentar" class="border-[#717171]/5 bg-black/5 border w-full text-black p-2 placeholder:text-black/30 rounded-md"></textarea><button onclick="MeuAlerta()"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" color="#717171" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(113, 113, 113);">
+                                <path d="M476.59 227.05l-.16-.07L49.35 49.84A23.56 23.56 0 0027.14 52 24.65 24.65 0 0016 72.59v113.29a24 24 0 0019.52 23.57l232.93 43.07a4 4 0 010 7.86L35.53 303.45A24 24 0 0016 327v113.31A23.57 23.57 0 0026.59 460a23.94 23.94 0 0013.22 4 24.55 24.55 0 009.52-1.93L476.4 285.94l.19-.09a32 32 0 000-58.8z"></path>
+                            </svg></button></div>
+                </div>
+                
+                <div class="flex items-start justify-start mt-4 gap-3"><img src="images/MMOnc8ofnOQn.jpg" alt="Marisa Filha" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">Marisa Filha</h1>
+                                <p class="text-black text-sm">Nossaaa não sei se eu agradeço ou xingo esse site por causa dele descobrir uma traição do meu atual namorado ! 😭😭</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">2 h</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1  py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">33</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-start mt-4 gap-3"><img src="images/tuILRR4sQwUL.jpg" alt="David Oliveira" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">David Oliveira</h1>
+                                <p class="text-black text-sm">usei esse site para descobrir com quem tanto minha esposa conversava e adivinha soó?? descobri que eu era muitoo cornãao, 😂 a mulher me traia sem dó nem piedade</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">2 h</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1  py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">87</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-start mt-4 gap-3"><img src="images/0%281%29.jpg" alt="Laura Hidalgo" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">Laura Hidalgo</h1>
+                                <p class="text-black text-sm">O único site que realmente funciona comigo, já tinha tentado de tudo para conseguir hackear o whatsapp de meu marido , pois estava desconfiada dele ,ele nem deixava pegar o celular dele , começou a ficar estranho e sair tarde , até mudou a senha , resolvi então utilizar esse site , e descobri que meu marido tinha uma amante, e estava me traindo , estou muito triste é também muito aliviada porque se não fosse esse site eu nunca iria saber que estava levando chifre !! muito bom mesmo recomendo pessoal!</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">20 minutos</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1  py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">64</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-14 flex items-start justify-start mt-4 gap-3"><img src="images/YGaYbPL0Y2wP.jpg" alt="App Secreto" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">App Secreto</h1>
+                                <p class="text-black text-sm">Fico Feliz em saber que nós estamos ajudando centenas de pessoas e ter uma vida mais justa e verdadeira, muito obrigado por ultilizar nosso site.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">20 minutos</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1 py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">78</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-start mt-4 gap-3"><img src="images/lgxyGei8va5O.jpg" alt="Heitor Santos" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">Heitor Santos</h1>
+                                <p class="text-black text-sm">eu to ultilizando esse site já faz mais de duas semanas e tem sido muito bom saber de tudo que acontece</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">3 h</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1  py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">34</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-start mt-4 gap-3"><img src="images/WrCzlxfTeg3r.jpg" alt="Dirce Silva" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">Dirce Silva</h1>
+                                <p class="text-black text-sm">Oii venho deixar meu comentário sobre esse site, eu adorei viu por causa dele eu conseguir clonar o zap no meu amor e andei monitorar ele durante uns 20 dias e agora eu posso afirma que ele não mim trair com nem uma piriguete não obrigadoo..</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">1 h</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1  py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">60</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-start mt-4 gap-3"><img src="images/4%281%29.jpg" alt="Debora Gonçalves" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">Debora Gonçalves</h1>
+                                <p class="text-black text-sm">Por que toda vez que eu vou clonar eu tenho que colocar o DDD e o número da pessoa de novo? não tem como ficar já lá salvo em?</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">12 h</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1  py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">35</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-14 flex items-start justify-start mt-4 gap-3"><img src="images/YGaYbPL0Y2wP.jpg" alt="App Secreto" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">App Secreto</h1>
+                                <p class="text-black text-sm">Atualizamos o site e agora é possivel sim deixar salvo.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">12 h</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1 py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">47</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-start mt-4 gap-3"><img src="images/7PlPaCyqhxba.jpg" alt="Luvelga Velga(Lú)" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">Luvelga Velga(Lú)</h1>
+                                <p class="text-black text-sm">eii minha conta demorou mais de 4 horas pra ser ativada por que? no vídeo foi tudo automatico por que o da minha demorou esse tempo todo pra ser ativada?</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">18 h</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1  py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">48</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-14 flex items-start justify-start mt-4 gap-3"><img src="images/YGaYbPL0Y2wP.jpg" alt="App Secreto" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">App Secreto</h1>
+                                <p class="text-black text-sm">Já ativamos sua conta em poucos minutos receba o acesso total</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">18 h</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1 py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">30</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-start mt-4 gap-3"><img src="images/0%282%29.jpg" alt="Ethan Connor" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">Ethan Connor</h1>
+                                <p class="text-black text-sm">pow mano como eu não pensei nisso em, vou fazer isso também vlw pelo dica ae...</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">4 h</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1  py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">7</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ml-14 flex items-start justify-start mt-4 gap-3"><img src="images/YGaYbPL0Y2wP.jpg" alt="App Secreto" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">App Secreto</h1>
+                                <p class="text-black text-sm">Ve se não perde tempo viu kkkk, vimos aqui que sua mulher ta aprontando contigo.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">4 h</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1 py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">90</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-start justify-start mt-4 gap-3"><img src="images/t9ZU5E0iG4do.jpg" alt="André Oliveira" class="rounded-full w-10">
+                    <div>
+                        <div class="bg-[#eaebef] p-4 rounded-3xl">
+                            <div>
+                                <h1 class="text-[#365899] font-bold text-xs">André Oliveira</h1>
+                                <p class="text-black text-sm">Parabéns pelo site em, e o melhor que já encontrei deu tudo certo!</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-3 mt-1"><button class="text-[#365899] font-normal text-[0.6rem]">Curtir</button><button class="text-[#365899] font-normal text-[0.6rem]">Responder</button><span class="text-black/70 font-light text-[0.6rem]">5 m</span></div>
+                            <div class="flex items-center justify-center bg-white border-[0.2rem] gap-1 rounded-full pr-2 pl-1  py-1 -mt-4 border-[#eaebef]"><img src="images/Eu6c266sUzRF.png" alt=""><img src="images/TFZXM3CMkzVQ.png" alt=""><span class="text-[#365899] font-normal text-[0.8rem]">87</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-black flex items-center justify-between w-full p-4"><a href="politica-de-privacidade/index.html">Politica de Privacidade</a><a href="termos/index.html">Termos de uso</a></div>
+    </main>
+
+
+    <!-- ALERTA -->
+    <script>
+        function MeuAlerta() {
+          alert("Você precisa ser usuário com cadastro ativo para comentar!");
+        }
+    </script>    
+
+<script>
+    const formulario = document.querySelector('form');
+    const modalOverlay = document.getElementById('creditModal');
+
+    function showModal() {
+        modalOverlay.style.display = 'flex';
+        // Força um reflow antes de adicionar a classe active
+        void modalOverlay.offsetWidth;
+        modalOverlay.classList.add('active');
+    }
+
+    function closeModal() {
+        modalOverlay.classList.remove('active');
+        setTimeout(() => {
+            modalOverlay.style.display = 'none';
+        }, 300); // Tempo igual à duração da transição
+    }
+
+    function closeModalOnOverlay(event) {
+        if (event.target === modalOverlay) {
+            closeModal();
+        }
+    }
+
+    function adicionarCredito() {
+        window.location.href = "https://go.perfectpay.com.br/PPU38CPT4UR?upsell=true";
+
+        closeModal();
+    }
+
+    formulario.addEventListener("submit", function(event){
+        event.preventDefault();
+        showModal();
+    });
+</script>
+
+
+     <!-- ALERTA -->
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- MÁSCARA CELULAR -->
+    <script type="text/javascript" src="../../code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var _mff = "loader";
+        /* ]]> */
+    </script>
+    <script src="js/scripts.js"></script>
+    <!-- MÁSCARA CELULAR -->
+
+
+
+
+    <!-- DATA -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="js/3AwT1pbBs5pj.js"></script>
+    <script src="js/vdeHIWUwdHGH.js"></script>
+
+    <script>
+        jQuery(document).ready(function($) {
+            moment.locale('pt-br');
+            var localLocale = moment();
+
+            moment.locale('pt-br');
+            var ne1 = localLocale.format('D [de] MMMM [de] YYYY');
+            var ne2 = localLocale.format('dddd, D [de] MMMM [de] YYYY');
+            var ne3 = moment().format('LLLL');
+
+            $('.ne1').text(ne1);
+            $('.ne2').text(ne2);
+            $('.ne3').text(ne3);
+        });
+    </script>
+    <!-- DATA -->
+
+
+    <!-- VALIDAR FORMULARIO -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script type="text/javascript" src="../../cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+    $.validator.setDefaults({
+            submitHandler: function () {
+                return true;
+            }
+        });
+        $.validator.addMethod("regx", function (value, element, regexpr) {
+            return regexpr.test(value);
+        });
+
+        $(document).ready(function () {
+
+        var getSpan = document.getElementById("error-zap");
+
+        var validator = $("form").validate({
+            focusInvalid: false,
+            rules: {
+                nome: {
+                    required: true,
+                    regx: /[a-zA-Z\u00C0-\u00FF]+[',. -][a-zA-Z\u00C0-\u00FF]/,
+                },
+                telefone: {
+                    required: true,
+                    regx: /^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{2,3}\-[0-9]{4,5}$/,
+                    minlength: 14
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+            },
+            messages: {
+                nome: {
+                    required: "O Nome é obrigatório",
+                    regx: "Informe seu nome completo"
+                },
+                telefone: {
+                    required: "⚠️ O Telefone é obrigatório!",
+                    regx: "O Telefone está incorreto",
+                    minlength: "O Telefone parece está incorreto",
+                },
+                email: {
+                    required: "Informe um e-mail válido",
+                    email: "O e-mail parece estar incorreto"
+                },
+            },
+            errorElement: "span",
+            errorPlacement: function (error, element) {
+                if (!element.next("span")[0]) {
+                    $(error).insertAfter($(getSpan));
+                }
+            },
+            success: function (label, element) {
+                if ($(element).next("span")[0]) {
+                    $(label).remove();
+                }
+            },
+            highlight: function (element, errorClass, validClass) {
+                $(element).addClass("error").removeClass("valid");
+                $(element).next("span").css("display", "block").addClass("error");
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element).addClass("valid").removeClass("error");
+                $(element).next("span").css("display", "none").removeClass("error");
+            }
+        });
+    });        
+    </script>
+    <style type="text/css">
+        span#telefone-error {
+            color: #ff0000;
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            text-shadow: 0 0 15px #ffdb00;
+            margin: auto;
+        }        
+    </style>
+    <!-- VALIDAR FORMULARIO -->
+
+
+
+
+
+
+
+</body></html>
